@@ -6,6 +6,11 @@ on:
                 description: "type of env"
                 required: true
                 default: "production"
+                type: choice
+                options:
+                    - production
+                    - development
+                    - staging
 
 jobs:
     conditional:
